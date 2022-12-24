@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '../styles/Home.module.css'
-import Img from '../src/components/Img'
+import Img from '../src/components/public-embeds/Img'
 
 import next2svg from "../src/next2.svg"
 

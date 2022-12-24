@@ -12,14 +12,10 @@ const globals = {
       if (typeof src === "object") return src.src;
       if (
         globals.constants.repo_name === "" ||
-        src[0] === "." ||
+        src[0] !== "/" ||
         src.includes("://")
       ) return src;
-      if (src[0] === "/") {
-        return "/" + globals.constants.repo_name + src;
-      } else {
-        return "/" + globals.constants.repo_name + "/" + src;
-      }
+      return "/" + globals.constants.repo_name + src;
     }
   } as const
 }

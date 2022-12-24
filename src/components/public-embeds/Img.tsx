@@ -1,12 +1,11 @@
-import globals from "../globals";
+import globals from "../../globals"
 
-/** Shows image from publicly served images */
+/** can handle both publicly served files in dev server and production server */
 export default function Img(
   props: React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement> & {
     src?: string | {src: string}
   }
 ) {
-  console.log(props.src);
   return <img
     {...props}
     src={globals.functions.prependPublicPrefix(props.src)}
