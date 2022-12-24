@@ -12,7 +12,7 @@ export default function Home() {
         <Link rel="icon" href="/fabicon.ico" />
       </Head>
       <main>
-        <h1>You can't handle the truth</h1>
+        <h1>You can&apos;t handle the truth</h1>
       </main>
     </>
   )
