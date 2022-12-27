@@ -19,11 +19,14 @@ const LocaleLink = observer(({
 
   return (
     <>
-      <L href={href} onClick={() => store.lang = l}>
+      <L href={href} onClick={() => {
+        store.lang = l;
+        document.documentElement.lang = l;
+      }}>
         {children}
       </L>
     </>
-  )
-})
+  );
+});
 
 export default LocaleLink
