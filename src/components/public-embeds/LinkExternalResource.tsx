@@ -1,7 +1,7 @@
 import globals from "../../globals"
 
 /** can handle both publicly served files in dev server and production server */
-export default function Link(
+export default function LinkExternalResource(
   props: React.DetailedHTMLProps<React.LinkHTMLAttributes<HTMLLinkElement>, HTMLLinkElement> & {
     href?: string | {src: string}
   }) {
